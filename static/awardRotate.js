@@ -8,7 +8,6 @@ var IE = eval('"v"=="\v"');
 jQuery.fn.extend({
     rotate:function(parameters)
     {
-        // console.log(this);//this指向canvas
         if (this.length===0||typeof parameters=="undefined") return;
             if (typeof parameters=="number") parameters={angle:parameters};
         var returned=[];
@@ -40,7 +39,6 @@ jQuery.fn.extend({
             return ret;
     },
     stopRotate: function(){
-    	// console.log(this);//this指向canvas
         for (var i=0,i0=this.length;i<i0;i++)
             {
                 var element=this.get(i);	
